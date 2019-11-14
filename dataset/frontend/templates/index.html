@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% block content %}
+	<style type="text/css">
+	.fa-angle-right{
+		font-size: 25px;
+	}
+	.product-info{
+		height: 50px;
+	    padding-top: 15px;
+	    font-size: 18px;
+	}
+	.product-info a{
+		color:  #333333 ;
+		font-weight:400 !important;
+	}
+	.product-info .pull-right{
+		color: #999999  !important;
+		font-size: 16pt;
+	}
+	.product-info .fa-angle-right{
+		font-size: 22pt;
+	}
+	</style>
+	<div class='row'>
+		<div class='col-xs-12'>
+			<div class="box box-solid">
+           <!--  <div class="box-header with-border"  style="text-align: center;">
+              <h3 class="box-title">今日买菜</h3>
+            </div> -->
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item">
+                    <img src="/static/images/vegetables.jpg" alt="First slide">
+
+                    <div class="carousel-caption">
+                      推荐菜品
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/images/vegetables2.jpg" alt="Second slide">
+
+                    <div class="carousel-caption">
+                      推荐菜品
+                    </div>
+                  </div>
+                  <div class="item active">
+                    <img src="/static/images/vegetables3.jpg" alt="Third slide">
+
+                    <div class="carousel-caption">
+                      推荐菜品
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                  <span class="fa fa-angle-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                  <span class="fa fa-angle-right"></span>
+                </a>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='col-xs-12'>
+			<div class="box box-primary" style='border-top: none !important'>
+            <div class="box-header with-border">
+              <h3 class="box-title">附近推荐菜品</h3>
+
+              <div class="box-tools pull-right">
+                
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <ul class="products-list product-list-in-box">
+                <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/cai1.jpg" alt="Product Image">
+                  </div>
+
+                  <div class="product-info">
+                    <a href="/product/" class="product-title">崇明松花菜
+                      <span class="fa fa-angle-right pull-right"></span>
+                       <span class="pull-right">99分</span>
+                  	</a>
+ 
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/cai2.jpg" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="/product/" class="product-title">伊塞厚切冷冻牛排
+                      <span class="fa fa-angle-right pull-right"></span>
+                      <span class="pull-right">98分</span>
+                  	</a>
+ 
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/cai3.jpg" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="/product/" class="product-title">金锣后腿精肉 
+                      <span class="fa fa-angle-right pull-right"></span>
+                       <span class="pull-right">97分</span>
+                    </a>
+ 
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/cai4.jpg" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="/product/" class="product-title">散养草鸡
+                      <span class="fa fa-angle-right pull-right"></span>
+                       <span class="pull-right">95.5分</span>
+                  </a>
+  
+                  </div>
+                </li>
+                
+
+                    <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/cai5.jpg" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="/product/" class="product-title">散养草鸡
+                      <span class="fa fa-angle-right pull-right"></span>
+                       <span class="pull-right">95.5分</span>
+                  </a>
+  
+                  </div>
+                </li>
+                <!-- /.item -->
+              </ul>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-center">
+              <a href="javascript:void(0)" class="uppercase">更多推荐</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+		</div>
+	</div>
+
+
+	<div class='row'>
+		<div class='col-xs-12'>
+			<div class="box box-primary" style='border-top: none !important'>
+            <div class="box-header with-border">
+              <h3 class="box-title">附近推荐市场</h3>
+
+              <div class="box-tools pull-right">
+                
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <ul class="products-list product-list-in-box">
+                <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/chang1.jpg" alt="Product Image">
+                  </div>
+
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">三门路农贸市场
+                      <span class="fa fa-angle-right pull-right"></span>
+                       <span class="pull-right">99分</span>
+                  	</a>
+                      
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/chang2.jpg" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">杨鑫菜市场
+                      <span class="fa fa-angle-right pull-right"></span>
+                       <span class="pull-right">99分</span>
+                  	</a>
+             
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/chang3.jpg" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">泗东市场
+                       <span class="fa fa-angle-right pull-right"></span>
+                       <span class="pull-right">98.5分</span>
+                    </a>
+ 
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="/static/images/chang4.jpg" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">大润发曹安店
+                      <span class="fa fa-angle-right pull-right"></span>
+                       <span class="pull-right">97分</span>
+                  </a>
+ 
+                  </div>
+                </li>
+                <!-- /.item -->
+              </ul>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-center">
+              <a href="javascript:void(0)" class="uppercase">更多推荐</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+		</div>
+	</div>
+{% endblock %}

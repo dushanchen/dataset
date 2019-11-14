@@ -1,0 +1,62 @@
+<style type="text/css">
+	#foot{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #f9f9f9;
+		padding: 4px !important;
+		padding-top: 8px !important;
+	}
+	.bar{
+		text-align: center;
+	}
+	.bar .img{
+		font-size: 22pt;
+	}
+	.bar .glyphicon-class{
+		color:#999999;
+		font-size: 10pt;
+	}
+
+	</style>
+<div>
+<div id="foot" class='row main-footer'>
+	<div class="col-xs-1 bar"></div>
+	<div class='col-xs-10 bar' style="padding: 0 !important;">
+		<div class="col-xs-4 bar" style="padding-left: 0 !important;">
+			<a href='/'>
+				{% if menu == 'index' %}
+					<img src='/static/images/bar12.png' />
+				{% else %}
+					<img src='/static/images/bar11.png' />
+				{% endif %}
+			<br>
+			<span class="glyphicon-class">今日推荐</span>
+			</a>
+		</div>
+		<div class="col-xs-4 bar" >
+			<a href='/map/'>
+				{% if menu == 'map' %}
+					<img src='/static/images/bar22.png' />
+				{% else %}
+					<img src='/static/images/bar21.png' />
+				{% endif %}
+			<br>
+	        <span class="glyphicon-class">溯源地图</span>
+	        </a>
+		</div>
+		<div class="col-xs-4 bar" style="padding-right: 0 !important;">
+			<a href='/personal/'>
+				{% if menu == 'personal' %}
+					<img src='/static/images/bar32.png' />
+				{% else %}
+					<img src='/static/images/bar31.png' />
+				{% endif %}
+			<br>
+	        <span class="glyphicon-class">个人中心</span>
+	        </a>
+		</div>
+	</div>
+	<div class="col-xs-1 bar"></div>
+</div>
+</div>

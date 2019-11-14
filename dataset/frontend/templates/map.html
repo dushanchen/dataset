@@ -1,0 +1,56 @@
+<!DOCTYPE html>  
+<html>
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>溯源地图</title>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<style type="text/css">  
+html{height:100%}  
+body{height:100%;margin:0px;padding:0px}  
+#container{height:100%}  
+</style>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zG9yplkDnItmb5O1h7ra1qGmIe6rhW5M">
+</script>
+</head>  
+ 
+<body style="width: 100%">  
+<style type="text/css">
+	#search{
+		height: 30px;
+		width: 90%;
+		margin: 5%;
+		top:30px;
+		position: absolute;
+		z-index: 999;
+		background-color: #aeadad;
+		opacity: 0.5;
+	}
+	#search input{
+		height: 28px;
+		margin: 0px 5px;
+		border: none;
+		color: white;
+		background-color: #aeadad;
+	}
+	i{
+		color: white;
+		margin: 5px;
+	}
+</style>
+<div id='search'>
+	<i class="fa fa-fw fa-search" ></i><input type='text' placeholder="搜索" />
+	<i class="fa fa-fw fa-microphone" style="float: right;"></i>
+</div>
+<div id="container"></div> 
+<script type="text/javascript"> 
+var map = new BMap.Map("container");
+// 创建地图实例  
+var point = new BMap.Point(121.48, 31.22);
+// 创建点坐标  
+map.centerAndZoom(point, 15);
+// 初始化地图，设置中心点坐标和地图级别  
+</script>  
+</body>  
+</html>
